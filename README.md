@@ -39,51 +39,12 @@ TaskManagementSystem/<br>
 - **Description:** Register a new user.
 
 - **Request Body:**
-{
-"title": "string",
-"description": "string",
-"duedate": "string (format: YYYY-MM-DDTHH:MM:SSZ)"
-
-} 
-#### GET /tasks/
-
-- **Description:** Get all tasks.
-
-- **Authentication:** Required
-
-#### GET /tasks/:taskID
-
-- **Description:** Get a single task by ID.
-
-- **Authentication:** Required
-
-#### PATCH /tasks/:taskID
-
-- **Description:** Update a task by ID.
-
-- **Authentication:** Required
-
-- **Request Body:** (Fields to update)
-
-Understood, you want the entire documentation in plain text format, but formatted so that it will display correctly in markdown when pasted into your README. Here's the revised version:
-
-## API Endpoints
-
-### Users
-
-#### POST /users/register
-
-- **Description:** Register a new user.
-
-- **Request Body:**
     ```json
 {
 "name": "string",
 "email": "string",
 "password": "string"
-}
-
-
+}```
 
 #### POST /users/login
 
@@ -94,10 +55,10 @@ Understood, you want the entire documentation in plain text format, but formatte
 {
 "email": "string",
 "password": "string"
-}
+}```
 
 
-- **Authentication Middleware:** All endpoints under /tasks require authentication. JWT token should be included in the Authorization header as "Bearer ".
+**Authentication Middleware:** All endpoints under /tasks require authentication. JWT token should be included in the Authorization header as "Bearer ".
 
 ### Tasks
 
@@ -108,12 +69,12 @@ Understood, you want the entire documentation in plain text format, but formatte
 - **Authentication:** Required
 
 - **Request Body:**
-```json
+  ```json
 {
 "title": "string",
 "description": "string",
 "duedate": "string (format: YYYY-MM-DDTHH:MM:SSZ)"
-}
+}```
 
 #### GET /tasks/
 
@@ -134,14 +95,15 @@ Understood, you want the entire documentation in plain text format, but formatte
 - **Authentication:** Required
 
 - **Request Body:** (Fields to update)
-```json
+  ```json
 {
 "title": "string",
 "description": "string",
 "duedate": "string (format: YYYY-MM-DDTHH:MM:SSZ)",
 "priority": "number",
 "status": "string"
-}
+}```
+
 #### DELETE /tasks/:taskID
 
 - **Description:** Delete a task by ID.
