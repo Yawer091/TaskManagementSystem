@@ -40,11 +40,11 @@ TaskManagementSystem/<br>
 
 - **Request Body:**
     ```json
-{
-"name": "string",
-"email": "string",
-"password": "string"
-}
+    {
+    "name": "string",
+    "email": "string",
+    "password": "string"
+    }
 
 #### POST /users/login
 
@@ -52,10 +52,10 @@ TaskManagementSystem/<br>
 
 - **Request Body:**
   ```json
-{
-"email": "string",
-"password": "string"
-}
+  {
+  "email": "string",
+  "password": "string"
+  }
 
 
 **Authentication Middleware:** All endpoints under /tasks require authentication. JWT token should be included in the Authorization header as "Bearer ".
@@ -70,11 +70,11 @@ TaskManagementSystem/<br>
 
 - **Request Body:**
   ```json
-{
-"title": "string",
-"description": "string",
-"duedate": "string (format: YYYY-MM-DDTHH:MM:SSZ)"
-}
+  {
+  "title": "string",
+  "description": "string",
+  "duedate": "string (format: YYYY-MM-DDTHH:MM:SSZ)"
+  }
 
 #### GET /tasks/
 
@@ -96,13 +96,13 @@ TaskManagementSystem/<br>
 
 - **Request Body:** (Fields to update)
   ```json
-{
-"title": "string",
-"description": "string",
-"duedate": "string (format: YYYY-MM-DDTHH:MM:SSZ)",
-"priority": "number",
-"status": "string"
-}
+  {
+  "title": "string",
+  "description": "string",
+  "duedate": "string (format: YYYY-MM-DDTHH:MM:SSZ)",
+  "priority": "number",
+  "status": "string"
+  }
 
 #### DELETE /tasks/:taskID
 
