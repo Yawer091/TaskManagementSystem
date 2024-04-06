@@ -119,8 +119,8 @@ TaskManagementSystem/<br>
 
 ### Testing
     For unit Testing (Based on user information provided) execute the following command in Terminal
-    ```bash 
+  
     npm run test
-    ```
+    
     
 
