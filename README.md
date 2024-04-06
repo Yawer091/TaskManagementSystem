@@ -1,6 +1,9 @@
 # Task Management System
+<<<<<<< HEAD
 
 # <<<<<<< HEAD
+=======
+>>>>>>> 47c9987a1fa3c07ba6232c37b7832347ab73d3f3
 
 ## Introduction
 
@@ -125,7 +128,15 @@ TaskManagementSystem/`<br>`
     Connected to MongoDB database.
 
 ### Testing
+<<<<<<< HEAD
 
     For unit Testing (Based on user information provided) execute the following command in Terminal
 
     npm run test
+=======
+    For unit Testing (Based on user information provided) execute the following command in Terminal
+  
+    npm run test
+    
+
+>>>>>>> 47c9987a1fa3c07ba6232c37b7832347ab73d3f3
