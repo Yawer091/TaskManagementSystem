@@ -24,12 +24,13 @@ TaskManagementSystem/<br>
 - bcrypt, JWT , Mocha, Zest
 
 ## Installation & Getting Started
+```bash
 - git clone https://github.com/Yawer091/TaskManagementSystem.git
 - npm install
 - Set up MongoDB and configure the connection string in config/db.js.
 - Generate JWT secret key and update it in the authentication middleware (middleware/auth.middleware.js).
 - npm run server
-
+```
 ## API Endpoints
 
 ### Users
