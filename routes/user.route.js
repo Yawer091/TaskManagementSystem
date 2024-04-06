@@ -5,6 +5,7 @@ const { userModel } = require("../models/user.model");
 const userRouter = express.Router();
 const bcrypt = require("bcrypt");
 
+//REGISTER THE USER
 userRouter.post("/register", async (req, res) => {
   const { name, email, password } = req.body;
   try {
@@ -25,6 +26,8 @@ userRouter.post("/register", async (req, res) => {
     res.status(400).json({ error });
   }
 });
+
+//LOGIN USER
 
 userRouter.post("/login", async (req, res) => {
   const { email, password } = req.body;

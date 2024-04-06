@@ -3,6 +3,7 @@ const { taskModel } = require("../models/task.model");
 const { auth } = require("../middleware/auth.middleware");
 const taskRouter = express.Router();
 
+// GET ALL THE TASKS
 taskRouter.get("/", auth, async (req, res) => {
   try {
     const tasks = await taskModel.find({ userID: req.body.userID });
@@ -14,6 +15,7 @@ taskRouter.get("/", auth, async (req, res) => {
     res.status(400).json({ error });
   }
 });
+//ADD NEW TASKS
 taskRouter.post("/", async (req, res) => {
   try {
     const task = new taskModel(req.body);
@@ -24,6 +26,7 @@ taskRouter.post("/", async (req, res) => {
   }
 });
 
+//UPDATE ANY TASKS BY ID
 taskRouter.patch("/:taskID", auth, async (req, res) => {
   const payload = req.body;
   const { taskID } = req.params;
@@ -45,6 +48,7 @@ taskRouter.patch("/:taskID", auth, async (req, res) => {
   }
 });
 
+//DELETE ANY TASK BY ID
 taskRouter.delete("/:taskID", auth, async (req, res) => {
   const { taskID } = req.params;
   try {
