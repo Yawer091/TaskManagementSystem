@@ -10,7 +10,7 @@ const { taskRouter } = require("./routes/task.route");
 app.use("/users", userRouter);
 app.use("/tasks", taskRouter);
 
-app.listen(process.env.PORT, async () => {
+const server = app.listen(process.env.PORT, async () => {
   try {
     await connection;
     console.log("Database Connected");
@@ -19,3 +19,4 @@ app.listen(process.env.PORT, async () => {
     console.log(err);
   }
 });
+module.exports = { server };
