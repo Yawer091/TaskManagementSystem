@@ -67,8 +67,6 @@ TaskManagementSystem/<br>
 
 Understood, you want the entire documentation in plain text format, but formatted so that it will display correctly in markdown when pasted into your README. Here's the revised version:
 
-markdown
-Copy code
 ## API Endpoints
 
 ### Users
@@ -78,27 +76,26 @@ Copy code
 - **Description:** Register a new user.
 
 - **Request Body:**
+    ```json
 {
 "name": "string",
 "email": "string",
 "password": "string"
 }
 
-markdown
-Copy code
+
 
 #### POST /users/login
 
 - **Description:** Login an existing user.
 
 - **Request Body:**
+  ```json
 {
 "email": "string",
 "password": "string"
 }
 
-markdown
-Copy code
 
 - **Authentication Middleware:** All endpoints under /tasks require authentication. JWT token should be included in the Authorization header as "Bearer ".
 
@@ -111,14 +108,12 @@ Copy code
 - **Authentication:** Required
 
 - **Request Body:**
+```json
 {
 "title": "string",
 "description": "string",
 "duedate": "string (format: YYYY-MM-DDTHH:MM:SSZ)"
 }
-
-markdown
-Copy code
 
 #### GET /tasks/
 
@@ -139,6 +134,7 @@ Copy code
 - **Authentication:** Required
 
 - **Request Body:** (Fields to update)
+```json
 {
 "title": "string",
 "description": "string",
