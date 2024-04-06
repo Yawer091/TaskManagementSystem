@@ -21,7 +21,7 @@ TaskManagementSystem/<br>
 - Nodejs
 - Express.js
 - MongoDB, Mongoose
-- bcrypt, JWT , Mocha, Zest
+- bcrypt, JWT , Mocha, chai
 
 ## Installation & Getting Started
 ```bash
@@ -114,5 +114,12 @@ TaskManagementSystem/<br>
 - **Authentication:** Required
 
 ### Server Information
--The server is running on a dynamic port configured via the .env file.
--Connected to MongoDB databas
+    The server is running on a dynamic port configured via the ```bash .env ``` file.
+    Connected to MongoDB database.
+
+### Testing
+    For unit Testing (Based on user information provided) execute the following command in Terminal:
+    
+    ```bash npm run test ```
+    
+
