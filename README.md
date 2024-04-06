@@ -30,4 +30,124 @@ TaskManagementSystem/<br>
 - Generate JWT secret key and update it in the authentication middleware (middleware/auth.middleware.js).
 - npm run server
 
-  
+## API Endpoints
+
+### Users
+
+#### POST /users/register
+
+- **Description:** Register a new user.
+
+- **Request Body:**
+{
+"title": "string",
+"description": "string",
+"duedate": "string (format: YYYY-MM-DDTHH:MM:SSZ)"
+
+} 
+#### GET /tasks/
+
+- **Description:** Get all tasks.
+
+- **Authentication:** Required
+
+#### GET /tasks/:taskID
+
+- **Description:** Get a single task by ID.
+
+- **Authentication:** Required
+
+#### PATCH /tasks/:taskID
+
+- **Description:** Update a task by ID.
+
+- **Authentication:** Required
+
+- **Request Body:** (Fields to update)
+
+Understood, you want the entire documentation in plain text format, but formatted so that it will display correctly in markdown when pasted into your README. Here's the revised version:
+
+markdown
+Copy code
+## API Endpoints
+
+### Users
+
+#### POST /users/register
+
+- **Description:** Register a new user.
+
+- **Request Body:**
+{
+"name": "string",
+"email": "string",
+"password": "string"
+}
+
+markdown
+Copy code
+
+#### POST /users/login
+
+- **Description:** Login an existing user.
+
+- **Request Body:**
+{
+"email": "string",
+"password": "string"
+}
+
+markdown
+Copy code
+
+- **Authentication Middleware:** All endpoints under /tasks require authentication. JWT token should be included in the Authorization header as "Bearer ".
+
+### Tasks
+
+#### POST /tasks/create
+
+- **Description:** Create a new task.
+
+- **Authentication:** Required
+
+- **Request Body:**
+{
+"title": "string",
+"description": "string",
+"duedate": "string (format: YYYY-MM-DDTHH:MM:SSZ)"
+}
+
+markdown
+Copy code
+
+#### GET /tasks/
+
+- **Description:** Get all tasks.
+
+- **Authentication:** Required
+
+#### GET /tasks/:taskID
+
+- **Description:** Get a single task by ID.
+
+- **Authentication:** Required
+
+#### PATCH /tasks/:taskID
+
+- **Description:** Update a task by ID.
+
+- **Authentication:** Required
+
+- **Request Body:** (Fields to update)
+{
+"title": "string",
+"description": "string",
+"duedate": "string (format: YYYY-MM-DDTHH:MM:SSZ)",
+"priority": "number",
+"status": "string"
+}
+#### DELETE /tasks/:taskID
+
+- **Description:** Delete a task by ID.
+
+- **Authentication:** Required
