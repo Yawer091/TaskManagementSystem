@@ -17,8 +17,8 @@ TaskManagementSystem/`<br>`
 │ ├─ middlewares/`<br>`
 │ ├─ models/`<br>`
 │ ├─ routes/`<br>`
-│ ├─ server.js`<br>`
-│ └─ package.json`<br>`
+│ ├─ server.js `<br>`
+│ └─ package.json `<br>`
 
 ## Technology Stack
 
