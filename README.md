@@ -71,12 +71,14 @@ TaskManagementSystem/<br>
 - **Request Body:**
   ```json
   {
-  "title": "string",
-  "description": "string",
-  "duedate": "string (format: YYYY-MM-DDTHH:MM:SSZ)"
+  "title": "String",
+  "description": "String",
+  "dueDate": "Date",
+  "priority":"String",
+  "status":"Boolean"
   }
 
-#### GET /tasks/
+#### GET /tasks/read
 
 - **Description:** Get all tasks.
 
@@ -97,11 +99,11 @@ TaskManagementSystem/<br>
 - **Request Body:** (Fields to update)
   ```json
   {
-  "title": "string",
-  "description": "string",
-  "duedate": "string (format: YYYY-MM-DDTHH:MM:SSZ)",
-  "priority": "number",
-  "status": "string"
+  "title": "String",
+  "description": "String",
+  "dueDate": "Date",
+  "priority": "Number",
+  "status": "Boolean"
   }
 
 #### DELETE /tasks/:taskID
@@ -109,3 +111,7 @@ TaskManagementSystem/<br>
 - **Description:** Delete a task by ID.
 
 - **Authentication:** Required
+
+### Server Information
+-The server is running on a dynamic port configured via the .env file.
+-Connected to MongoDB databas
