@@ -1,6 +1,4 @@
 # Task Management System
-<<<<<<< HEAD
-=======
 
 ## Introduction
   Welcome to the project Task Management System This application provide user to manage their daily task in easy way
@@ -124,6 +122,4 @@ TaskManagementSystem/<br>
   
     npm run test
     
-    
 
->>>>>>> 5855681db00a174ebc30b26e2c3723ef5a70d98f
